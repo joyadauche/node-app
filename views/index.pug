@@ -1,0 +1,17 @@
+extends layout.pug
+
+block content
+    .container
+    .card
+    if data.length > 0 || !error
+        h1.card-header.text-center List of Users
+        ul.list-group.list-group-flush
+            each user in data
+                li.list-group-item=user.name + " - " +  user.email
+    else
+        h1.card-header.text-center List of dummy users until service is up and running 
+        ul.list-group.list-group-flush
+            li.list-group-item="dummy user 1" + " - " +  "dummy01@email.com"
+            li.list-group-item="dummy user 2" + " - " +  "dummy02.email.com"
+            li.list-group-item="dummy user 3" + " - " +  "dummy03.email.com"
+        
