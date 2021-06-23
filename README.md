@@ -1,5 +1,5 @@
 # USERS APP
-An express web app that consumes the node-server api
+An express web app that consumes the [node-server]((https://github.com/joyadauche/node-server) ) api
 
 ## Run App
 - Ensure the [node rest api server](https://github.com/joyadauche/node-server) is running.
